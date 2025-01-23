@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'ZeldaFont';
+    src: url('./assets/fonts/The\ Wild\ Breath\ of\ Zelda.otf') format('truetype');
+}
+
+body {
+    background-color: #1b1b1b;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Espaço entre logo e os demais itens */
+    align-items: center;
+    background: #1b1b1b;
+    height: 12vh;
+    padding: 0 20px; /* Adiciona espaçamento lateral */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente a imagem e o texto */
+    gap: 10px; /* Espaço entre a imagem e o texto */
+}
+
+.triforce {
+    width: 8vh;
+    padding: 0; /* Remove padding desnecessário */
+}
+
+.logo {
+    text-decoration: none;
+    color: #D9C554;
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: "ZeldaFont";
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 20px; /* Espaço entre os itens */
+    margin-left: auto; /* Mantém a lista à direita */
+}
+
+.nav-list li {
+    margin: 0;
+}
+
+.nav-button {
+    padding: 10px 20px;
+    background-color: #D9C554;
+    color: #1b1b1b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'ZeldaFont';
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-left: 20px; /* Espaçamento maior entre a lista e o botão */
+}
+
+.nav-button:hover {
+    background-color: #ffffff;
+    color: #D9C554;
+}
+
+.anav {
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.6s;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+.anav:hover {
+    color: #D9C554;
+}
+
+main {
+    position: relative; /* Necessário para o posicionamento do fundo */
+    height: 92vh;
+}
+
+.main-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4; /* Aplica a opacidade de 60% à imagem */
+    z-index: -1; /* Coloca a camada atrás dos outros conteúdos */
+}
+
+.linkrender {
+    position: absolute; /* Usando posicionamento absoluto */
+    right: 0; /* Move a imagem para a borda direita */
+    width: 51%; /* Define a largura da imagem como 51% da largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta para centralização perfeita */
+    opacity: 1; /* Garante que a imagem tenha opacidade normal */
+}
+
+.titulo {
+    position: absolute;
+    z-index: 1;
+    min-height: calc(80vh - 30px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32;
+    padding: 80px 80px 0px 70px;
+    max-width: 700px;
+}
+
+.title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 55px;
+    color: #fff;
+}
+
+.texto {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+
+.buttonTitle {
+    text-decoration: none;
+    font-family: 'ZeldaFont';
+    color: #D9C554;
+    background-color: rgba(255, 255, 255, .1);
+    border: 0.5px solid #D9C554;
+    border-radius: 4px;
+    font-family: 'ChaletComprime';
+    font-size: 28px;
+    text-align: center;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    width: 50%;
+    transition: all, 0.3s ease-in;
+}
+
+.buttonTitle .bt {
+    font-family: 'ZeldaFont';
+    color: #ffffff;
+}
