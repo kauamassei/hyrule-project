@@ -50,6 +50,23 @@ nav {
     margin-left: auto; /* Mantém a lista à direita */
 }
 
+.nav-list.active {
+    display: flex; /* Mostra o menu */
+    flex-direction: column;
+    position: absolute;
+    top: 12vh; /* Para alinhar abaixo da barra de navegação */
+    right: 0;
+    background-color: #1b1b1b;
+    width: 100%; /* Faz o menu ocupar a largura da tela */
+    padding: 10px 0;
+    z-index: 1000;
+    gap: 15px; /* Espaço entre os itens do menu */
+}
+
+.nav-list.active:hover{
+    color: #D9C554;
+}
+
 .nav-list li {
     margin: 0;
 }
@@ -98,6 +115,7 @@ main {
     height: 100%;
     opacity: 0.4; /* Aplica a opacidade de 60% à imagem */
     z-index: -1; /* Coloca a camada atrás dos outros conteúdos */
+    object-fit: cover;
 }
 
 .linkrender {
@@ -123,9 +141,9 @@ main {
 }
 
 .title {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 35px;
-    color: #fff;
+    font-family: 'ZeldaFont';
+    font-size: 40px;
+    color: #D9C554;
 }
 
 .texto {
@@ -153,4 +171,60 @@ main {
 .buttonTitle .bt {
     font-family: 'ZeldaFont';
     color: #ffffff;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    width: 30px;
+    height: 3px;
+    background-color: #D9C554;
+}
+
+.hamburger-menu.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-menu.open span:nth-child(2) {
+    opacity: 0; /* Esconde o meio */
+}
+
+.hamburger-menu.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.hamburger-menu span {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+
+/* Responsividade */
+@media (max-width: 798px) {
+    .hamburger-menu {
+        display: flex;
+        width: 20%;
+    }
+
+    .nav-button{
+        display: none;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+    }
+
+    .buttonTitle{
+        width: 70%;
+    }
+
+    .linkrender {
+        opacity: 0; /* Remove o render ao reduzir a tela */
+    }
 }

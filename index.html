@@ -1,43 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hyrule</title>
-    <link rel="stylesheet" href="./src/navbar.css">
-    <link rel="stylesheet" href="./src/section.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./src/navbar.css" />
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <nav>
-                <div class="logo-container">
-                    <img class="triforce" src="./src/assets/pngTRIFORCE.png" alt="Logo Triforce">
-                    <a class="logo" href="/">HYRULE</a>
-                </div>
-                <ul class="nav-list">
-                    <li><a class="anav" href="#games">Games</a></li>
-                    <li><a class="anav" href="#personagens">Personagens</a></li>
-                    <li><a class="anav" href="#historia">História</a></li>
-                </ul>
-                <button class="nav-button"><p class="bt">INICIAR</p></button>
-            </nav>
-        </header>
-        <main>
-            <div class="mainContent">
-                <img class="main-bg" src="./src/assets/totkbg.jpg" alt="Imagem de fundo">
-                <img class="linkrender" src="./src/assets/linkrender.png" alt="">
-                <div class="titulo">
-                    <h1 class="title">Conheça o mundo de The Legend Of Zelda</h1>
-                    <p class="texto">Experimente os fenômenos de entretenimento da franquia Zelda</p>
-                    <a class="buttonTitle" href=""><p class="bt">INICIAR</p></a>
-                </div>
-            </div>
+      <header>
+        <nav>
+          <div class="logo-container">
+            <img
+              class="triforce"
+              src="./src/assets/pngTRIFORCE.png"
+              alt="Logo Triforce"
+            />
+            <a class="logo" href="/">HYRULE</a>
+          </div>
+          <div class="hamburger-menu" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="nav-list" id="menu">
+            <li><a class="anav" href="#games">Games</a></li>
+            <li><a class="anav" href="#personagens">Personagens</a></li>
+            <li><a class="anav" href="#historia">História</a></li>
+          </ul>
+          <button class="nav-button"><p class="bt">INICIAR</p></button>
+        </nav>
+      </header>
+      <main>
+        <div class="mainContent">
+          <img
+            class="main-bg"
+            src="./src/assets/totkbg.jpg"
+            alt="Imagem de fundo"
+          />
+          <img class="linkrender" src="./src/assets/linkrender.png" alt="" />
+          <div class="titulo">
+            <h1 class="title">Conheca o mundo de The Legend Of Zelda</h1>
+            <p class="texto">
+              Experimente os fenômenos de entretenimento da franquia Zelda
+            </p>
+            <a class="buttonTitle" href=""><p class="bt">INICIAR</p></a>
+          </div>
+        </div>
 
-                    <div class="section">
-
-            </div>
-        </main>
+        <div class="section"></div>
+      </main>
     </div>
-</body>
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const menu = document.getElementById("menu");
+
+      hamburger.addEventListener("click", () => {
+        menu.classList.toggle("active");
+        hamburger.classList.toggle("open"); // Opcional, para animar o botão hambúrguer
+      });
+    </script>
+  </body>
 </html>
