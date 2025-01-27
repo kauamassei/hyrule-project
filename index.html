@@ -4,33 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hyrule</title>
-    <link rel="stylesheet" href="./src/navbar.css" />
+    <link rel="stylesheet" href="./src/style.css" />
   </head>
+  <link
+    rel="shortcut icon"
+    href="src/assets/pngTRIFORCE.png"
+    type="image/x-icon"
+  />
   <body>
     <div class="container">
-      <header>
-        <nav>
-          <div class="logo-container">
-            <img
-              class="triforce"
-              src="./src/assets/pngTRIFORCE.png"
-              alt="Logo Triforce"
-            />
-            <a class="logo" href="/">HYRULE</a>
-          </div>
-          <div class="hamburger-menu" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <ul class="nav-list" id="menu">
-            <li><a class="anav" href="#games">Games</a></li>
-            <li><a class="anav" href="#personagens">Personagens</a></li>
-            <li><a class="anav" href="#historia">História</a></li>
-          </ul>
-          <button class="nav-button"><p class="bt">INICIAR</p></button>
-        </nav>
-      </header>
+      <!-- Aqui será carregada a navbar -->
+      <div id="navbar"></div>
       <main>
         <div class="mainContent">
           <img
@@ -44,21 +28,12 @@
             <p class="texto">
               Experimente os fenômenos de entretenimento da franquia Zelda
             </p>
-            <a class="buttonTitle" href=""><p class="bt">INICIAR</p></a>
+            <a class="buttonTitle" href="./games.html"><p class="bt">INICIAR</p></a>
           </div>
         </div>
 
-        <div class="section"></div>
       </main>
     </div>
-    <script>
-      const hamburger = document.getElementById("hamburger");
-      const menu = document.getElementById("menu");
-
-      hamburger.addEventListener("click", () => {
-        menu.classList.toggle("active");
-        hamburger.classList.toggle("open"); // Opcional, para animar o botão hambúrguer
-      });
-    </script>
+    <script src="./src/navbar.js"></script>
   </body>
 </html>
