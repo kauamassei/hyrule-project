@@ -43,7 +43,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     padding: 8px 16px; /* Ajusta o espaçamento interno */
-    cursor: pointer; /* Adiciona um cursor pointer para indicar clicabilidade */
+    cursor: pointer; 
     border: none;
 }
 .filterBtn2 {
@@ -52,7 +52,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     padding: 8px 16px; /* Ajusta o espaçamento interno */
-    cursor: pointer; /* Adiciona um cursor pointer para indicar clicabilidade */
+    cursor: pointer; 
     border: none;
 }
 
@@ -115,4 +115,68 @@
     font-size: 15px;
     color: #a0a0a0;
     margin-bottom: 20px;
+}
+
+@media (max-width: 590px){
+    .btnGroup{
+        display: none;
+    }
+    
+    .titlesGroup{
+        gap: 180px;
+
+    }
+
+}
+
+@media (max-width: 555px){
+    .btnGroup{
+        display: none;
+    }
+    
+    .titlesGroup{
+        gap: 120px;
+
+    }
+
+}
+
+@media (max-width: 494px){
+    .btnGroup{
+        display: none;
+    }
+    
+    .titlesGroup{
+        gap: 60px;
+
+    }
+
+}
+
+@media (max-width: 438px){
+    .btnGroup{
+        display: none;
+    }
+    
+    .titlesGroup{
+        gap: 20px;
+
+    }
+
+}
+
+@media (max-width: 397px){
+    .btnGroup{
+        display: none;
+    }
+    
+    .titlesGroup{
+        gap: 0px;
+
+    }
+
+    .titlesDiv{
+        padding: 0 30px;
+    }
+
 }
