@@ -1,0 +1,186 @@
+.bodyS {
+    background: #383838;
+}
+
+.titleDiv3{
+    display: flex; /* Alinha os elementos horizontalmente */
+    align-items: center; /* Alinha os elementos verticalmente ao centro */
+    justify-content: center; /* Mantém o botão de filtro na extrema direita */
+    padding: 0 60px; /* Remove o espaçamento superior e inferior */
+    margin-top: 50px;
+
+}
+
+.pStory{
+    font-family: 'ZeldaFont';
+    color: #D9C554;
+    font-size: 56px;
+    margin: 0; /* Remove margens padrão */
+    padding: 9px;
+}
+
+.horizontalLine {
+    width: 90%;
+    height: 2px;
+    background-color: rgb(148, 148, 148);
+    margin: 0 auto; /* Remove qualquer espaço acima ou abaixo da linha */
+}
+
+.cardContainerStory{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.cardStory{
+    width: 85%;
+    height: 470px;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    box-shadow: #282828;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.cardStory img {
+    width: 100%;
+    height: 300px; /* Altura fixa para as imagens */
+    object-fit: cover; /* Faz com que a imagem preencha completamente o espaço, cortando o excedente */
+    object-position: top center; /* Ajuste padrão: centraliza horizontal e verticalmente */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.cardText3{
+    padding: 20px;
+}
+
+.titleZ{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
+    color: #af8f02;
+    font-size: 20px;
+    margin-bottom: 10px
+}
+
+.historia{
+    font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        color: #bdbdbd;
+        margin-bottom: 20px;
+}
+
+@media (max-width: 1058px){
+    .cardStory{
+        width: 85%;
+        height: 550px;
+        background-color: #2b2b2b;
+        border-radius: 10px;
+        box-shadow: #282828;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 630px){
+    .cardStory{
+        width: 85%;
+        height: 750px;
+        background-color: #2b2b2b;
+        border-radius: 10px;
+        box-shadow: #282828;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    .historia{
+        font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            color: #bdbdbd;
+            margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 585px){
+    .cardStory{
+        width: 85%;
+        height: 800px;
+        background-color: #2b2b2b;
+        border-radius: 10px;
+        box-shadow: #282828;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    .historia{
+        font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            color: #bdbdbd;
+            margin-bottom: 22px;
+    }
+}
+
+@media (max-width: 530px){
+    .cardStory{
+        width: 85%;
+        height: 850px;
+        background-color: #2b2b2b;
+        border-radius: 10px;
+        box-shadow: #282828;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    .historia{
+        font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            color: #bdbdbd;
+            margin-bottom: 22px;
+    }
+}
+
+@media (max-width: 494px){
+    .cardStory{
+        width: 85%;
+        height: 950px;
+        background-color: #2b2b2b;
+        border-radius: 10px;
+        box-shadow: #282828;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    .historia{
+        font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            color: #bdbdbd;
+            margin-bottom: 22px;
+    }
+}
+
+@media (max-width: 410px){
+    .cardStory{
+        width: 85%;
+        height: 1100px;
+        background-color: #2b2b2b;
+        border-radius: 10px;
+        box-shadow: #282828;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    .historia{
+        font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            color: #bdbdbd;
+            margin-bottom: 22px;
+    }
+}
