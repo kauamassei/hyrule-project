@@ -82,6 +82,7 @@ nav {
     font-size: 16px;
     transition: background-color 0.3s ease;
     margin-left: 20px; /* Espaçamento maior entre a lista e o botão */
+    text-decoration: none;
 }
 
 .nav-button:hover {
