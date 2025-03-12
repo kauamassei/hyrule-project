@@ -3,7 +3,7 @@ async function loadNavbar() {
   
     try {
       // Busca o arquivo navbar.html
-      const response = await fetch("../pages/navbar.html");
+      const response = await fetch("/navbar.html");
       
       // Verifica se o arquivo foi carregado com sucesso
       if (!response.ok) {
